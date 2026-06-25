@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Tajawal", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-brand-blue: #0A1931;
+  --color-brand-accent: #E2E8F0; /* Premium Silver */
+  --color-brand-gold: #C5A880; /* Subtle sand/champagne gold */
+  --color-brand-navy: #0F2347;
+  --color-brand-dark: #071021;
+}
+
+body {
+  font-family: var(--font-sans);
+  direction: rtl;
+  background-color: #071021; /* Rich Dark Charcoal Navy Base */
+  color: #f3f4f6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Premium Blueprint Light Grid Background Utility */
+.bg-light-grid {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(to right, rgba(16, 42, 67, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 42, 67, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Custom slider scrollbars for smooth RTL scrolling elements */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.1);
+}
+body.light-mode ::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 1);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 4px;
+}
+body.light-mode ::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+body.light-mode ::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.7);
+}
+
+/* Premium Light Mode Class Enhancements */
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+body.light-mode input:focus,
+body.light-mode select:focus,
+body.light-mode textarea:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15) !important;
+}

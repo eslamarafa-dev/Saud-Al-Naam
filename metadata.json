@@ -1,0 +1,6 @@
+{
+  "name": "سعود النعام للخدمات العقارية",
+  "description": "منصة سحابية لإدارة الأملاك، الوحدات السكنية والسياحية، وأتمتة تجربة الضيوف والعمليات في المملكة العربية السعودية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
